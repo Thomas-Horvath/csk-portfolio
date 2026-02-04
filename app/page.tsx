@@ -1,65 +1,57 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="relative h-[calc(100vh-81px)] bg-[url('/hero.jpg')] bg-cover bg-top">
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* Tartalom */}
+      <div className="relative z-10 h-full flex items-center">
+        <div className="max-w-350 px-12 w-full mx-auto">
+          <div className="max-w-3xl text-neutral-100 flex flex-col items-center md:items-start">
+
+            {/* Név */}
+            <h1 className="text-4xl md:text-7xl leading-tight">
+              Csénye Katalin
+            </h1>
+
+            {/* Alcím */}
+            <p className="mt-8 text-lg tracking-wide text-neutral-200">
+              Szobrászművész
+            </p>
+
+            {/* Finom elválasztó */}
+            <div className="mt-6 h-px w-32 bg-neutral-300/60" />
+
+            {/* Tagline */}
+            <p className="text-center md:text-start tracking-wide  mt-6 text-base text-neutral-200 max-w-md">
+              Időtálló formák, csendes történetek.  
+              Klasszikus szobrászat kortárs szemlélettel.
+            </p>
+
+            {/* CTA */}
+            <div className="mt-10">
+              <a
+                href="/munkak"
+                className="
+                  inline-block
+                  border border-neutral-200
+                  px-8 py-3
+                  text-sm
+                  tracking-widest
+                  uppercase
+                  hover:bg-neutral-100
+                  hover:text-neutral-900
+                  transition
+                "
+              >
+                Munkáim
+              </a>
+            </div>
+
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
