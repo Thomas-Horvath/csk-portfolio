@@ -1,8 +1,18 @@
+"use client";
 
 import Link from 'next/link'
 import { imperialScript } from '@/app/ui/fonts';
+import { usePathname } from "next/navigation";
+
 
 const Navbar = () => {
+    const pathname = usePathname();
+
+    const isActive = (href: string) => {
+        if (href === "/") return pathname === "/";
+        return pathname.startsWith(href);
+    };
+
     return (
         <header className="sticky top-0 z-50">
             <div className="bg-stone-100 border-b border-neutral-600/40 backdrop-blur">
@@ -19,21 +29,21 @@ const Navbar = () => {
                     </div>
 
                     {/* MENÜ */}
-                    <nav className="hidden items-center lg:flex
-                                    gap-8
+                    <nav className="hidden items-center  lg:flex
+                               gap-8
                                     tracking-wider uppercase
                                     text-neutral-900
-                                    text-md">
-                        <Link href="/" className="hover:text-rose-900 transition">
+                                    text-md h-full">
+                        <Link href="/" className={`nav-dec ${isActive("/") ? "active" : ""}`}>
                             Kezdőlap
                         </Link>
-                        <Link href="/rolam" className="hover:text-rose-900 transition">
+                        <Link href="/rolam" className={`nav-dec ${isActive("/rolam") ? "active" : ""}`}>
                             Rólam
                         </Link>
-                        <Link href="/munkak" className="hover:text-rose-900 transition">
+                        <Link href="/munkak" className={`nav-dec ${isActive("/munkak") ? "active" : ""}`}>
                             Munkáim
                         </Link>
-                        <Link href="/kapcsolat" className="hover:text-rose-900 transition">
+                        <Link href="/kapcsolat" className={`nav-dec ${isActive("/kapcsolat") ? "active" : ""}`}>
                             Kapcsolat
                         </Link>
                     </nav>

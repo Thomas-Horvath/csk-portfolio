@@ -13,3 +13,27 @@
 .font-logo {
   font-family: var(--font-logo);
 } */
+
+
+
+
+.nav-dec {
+  @apply 
+        after:absolute after:left-0 relative
+        after:h-px after:w-0 hover:after:w-full
+        after:bg-rose-900
+        after:transition-all transition duration-200
+        after:bottom-6 hover:text-rose-900
+        h-full flex items-center
+       
+     
+}
+
+.active {
+  @apply 
+        after:absolute  relative
+        after:w-full
+        after:bg-rose-900
+        after:bottom-6 text-rose-900
+        h-full flex items-center
+}

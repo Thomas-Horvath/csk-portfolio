@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { imperialScript } from '../ui/fonts';
+
 
 const Footer = () => {
   return (
@@ -10,8 +12,8 @@ const Footer = () => {
 
           {/* Név / leírás */}
           <div>
-            <p className="font-logo text-2xl text-stone-800">
-              Csenye Katalin
+            <p className={`${imperialScript.className} tracking-wider text-5xl text-stone-800`}>
+              Csorba Kornél
             </p>
             <p className="mt-4 text-sm leading-relaxed text-stone-600 max-w-xs">
               Szobrászművész.  

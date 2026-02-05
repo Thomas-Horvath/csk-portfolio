@@ -1,5 +1,9 @@
+import Link from "next/link";
+import HeroDetails from "./components/HeroDetails";
+
 export default function Home() {
   return (
+    <>
     <main className="relative h-[calc(100vh-81px)] bg-[url('/hero.jpg')] bg-cover bg-top">
       
       {/* Overlay */}
@@ -12,7 +16,7 @@ export default function Home() {
 
             {/* Név */}
             <h1 className="text-4xl md:text-7xl leading-tight">
-              Csénye Katalin
+              Csorba Kornél
             </h1>
 
             {/* Alcím */}
@@ -31,7 +35,7 @@ export default function Home() {
 
             {/* CTA */}
             <div className="mt-10">
-              <a
+              <Link
                 href="/munkak"
                 className="
                   inline-block
@@ -46,12 +50,15 @@ export default function Home() {
                 "
               >
                 Munkáim
-              </a>
+              </Link>
             </div>
 
           </div>
         </div>
       </div>
     </main>
+
+    <HeroDetails />
+    </>
   );
 }
