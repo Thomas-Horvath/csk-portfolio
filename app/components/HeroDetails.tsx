@@ -1,6 +1,33 @@
-import React from 'react'
+import Image from 'next/image'
+
 
 function HeroDetails() {
+
+    const works = [
+        {
+            title: "Narcissus",
+            image: "/narcissus.jpg",
+            material: "Bronz",
+            year: 2023,
+            slug: "narcissus",
+        },
+        {
+            title: "Zsigmond király",
+            image: "/zsigmond.jpg",
+            material: "Kő",
+            year: 2021,
+            slug: "zsigmond-kiraly",
+        },
+        {
+            title: "Portré tanulmány",
+            image: "/portre.jpg",
+            material: "Gipsz",
+            year: 2024,
+            slug: "portre-tanulmany",
+        },
+    ];
+
+
     return (
         <section className="bg-stone-100">
             <div className="mx-auto max-w-7xl px-8 py-20 space-y-20">
@@ -23,16 +50,18 @@ function HeroDetails() {
                     </div>
 
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {["Narcissus", "Zsigmond király", "Portré tanulmány"].map((t) => (
+                        {works.map((work) => (
                             <a
-                                key={t}
+                                key={work.slug}
                                 href="/munkak"
                                 className="group rounded-2xl bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition"
                             >
-                                <div className="aspect-4/3 bg-stone-200" />
+                                <div className="relative aspect-3/4 bg-stone-200" >
+                                    <Image src={work.image} alt='szobor' fill className="object-cover object-top" />
+                                </div>
                                 <div className="p-5">
-                                    <p className="text-stone-800 group-hover:text-stone-900 transition">{t}</p>
-                                    <p className="mt-1 text-sm text-stone-600">Bronz / kő · 2023</p>
+                                    <p className="text-stone-800 group-hover:text-stone-900 transition">{work.title}</p>
+                                    <p className="mt-1 text-sm text-stone-600">   {work.material} · {work.year}</p>
                                 </div>
                             </a>
                         ))}
@@ -41,7 +70,9 @@ function HeroDetails() {
 
                 {/* About teaser */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    <div className="rounded-2xl bg-stone-200 aspect-4/3" />
+                    <div className="relative rounded-2xl bg-stone-200 aspect-4/3 overflow-hidden" >
+                        <Image src={'/hero-man.jpg'} alt='man' fill className="object-cover" />
+                    </div>
                     <div>
                         <h2 className="text-3xl text-stone-800">Rólam</h2>
                         <p className="mt-4 text-stone-600 leading-relaxed">
@@ -91,7 +122,7 @@ function HeroDetails() {
                 </div>
 
             </div>
-        </section>
+        </section >
 
     )
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ContactPage() {
   return (
     <main className="bg-stone-100">
@@ -55,7 +57,9 @@ export default function ContactPage() {
 
             <div className="rounded-2xl bg-white border border-stone-200 p-8">
               <h2 className="text-2xl text-stone-800">Helyszín</h2>
-              <div className="mt-4 rounded-xl bg-stone-200 aspect-video" />
+              <div className="relative overflow-hidden mt-4 rounded-xl bg-stone-200 aspect-video" >
+                <Image src={'/map.png'} alt="map" fill className="object-cover"/>
+              </div>
             </div>
           </div>
         </section>

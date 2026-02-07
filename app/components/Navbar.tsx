@@ -77,7 +77,7 @@ const Navbar = () => {
 
                 {/* Mobile panel */}
                 <div
-                    className={`absolute w-full top-20 md:hidden overflow-hidden transition-[max-height] duration-300 ${isOpen ? "max-h-96" : "max-h-0"
+                    className={`absolute w-full top-20 lg:hidden overflow-hidden transition-[max-height] duration-300 ${isOpen ? "max-h-96" : "max-h-0"
                         }`}
                 >
                     <nav className=" w-full ">
