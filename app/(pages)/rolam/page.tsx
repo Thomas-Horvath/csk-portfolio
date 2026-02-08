@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <main className="bg-stone-100">
@@ -11,14 +13,16 @@ export default function AboutPage() {
         </header>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-          <div className="rounded-2xl bg-stone-200 aspect-[4/3]" />
+          <div className="relative overflow-hidden rounded-2xl bg-stone-200 aspect-4/3">
+          <Image src={'/young-man-clay-sculpting-side-view.jpg'} alt="" fill className="object-cover" />
+          </div>
           <div className="space-y-4 text-stone-700 leading-relaxed">
             <p>Ide jön a bio (6–10 mondat). Műfajok, anyagok, fókusz.</p>
             <p>2. bekezdés: inspirációk, módszer, munkafolyamat röviden.</p>
 
             <a className="inline-block mt-4 border border-stone-300 px-6 py-3 text-sm uppercase tracking-widest
                           text-stone-700 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition"
-               href="/cv.pdf">
+               href="/rolam">
               CV (PDF)
             </a>
           </div>
