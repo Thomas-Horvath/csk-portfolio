@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "narcissus",
+    "title": "Narcissus",
+    "year": 2023,
+    "material": "Bronz",
+    "dimensions": "45 × 30 × 28 cm",
+    "category": ["Portré", "Kisplasztika"],
+    "coverImage": "/narcissus.jpg",
+    "images": [
+      "/narcissus.jpg",
+      "/narcissus.jpg",
+      "/narcissus.jpg"
+    ],
+    "description": [
+      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
+      "A forma letisztultsága és az anyagkezelés finomsága..."
+    ]
+  },
+  {
+    "slug": "narcissus2",
+    "title": "Narcissus2",
+    "year": 2023,
+    "material": "Bronz",
+    "dimensions": "45 × 30 × 28 cm",
+    "category": ["Portré", "Kisplasztika"],
+    "coverImage": "/narcissus.jpg",
+    "images": [
+      "/narcissus.jpg",
+      "/narcissus.jpg",
+      "/narcissus.jpg"
+    ],
+    "description": [
+      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
+      "A forma letisztultsága és az anyagkezelés finomsága..."
+    ]
+  },
+  {
+    "slug": "narcissus3",
+    "title": "Narcissus3",
+    "year": 2023,
+    "material": "Bronz",
+    "dimensions": "45 × 30 × 28 cm",
+    "category": ["Portré", "Kisplasztika"],
+    "coverImage": "/narcissus.jpg",
+    "images": [
+      "/narcissus.jpg",
+      "/narcissus.jpg",
+      "/narcissus.jpg"
+    ],
+    "description": [
+      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
+      "A forma letisztultsága és az anyagkezelés finomsága..."
+    ]
+  }
+]
