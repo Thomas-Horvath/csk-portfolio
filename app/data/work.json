@@ -2,13 +2,13 @@
   {
     "slug": "narcissus",
     "title": "Narcissus",
-    "year": 2023,
+    "year": 2022,
     "material": "Bronz",
     "dimensions": "45 × 30 × 28 cm",
     "category": ["Portré", "Kisplasztika"],
-    "coverImage": "/narcissus.jpg",
+    "coverImage": "/works/narcissus/narcissus.jpg",
     "images": [
-      "/narcissus.jpg",
+      "/works/narcissus/narcissus.jpg",
       "/narcissus.jpg",
       "/narcissus.jpg"
     ],
@@ -18,17 +18,18 @@
     ]
   },
   {
-    "slug": "narcissus2",
-    "title": "Narcissus2",
-    "year": 2023,
-    "material": "Bronz",
+    "slug": "Zsigmond",
+    "title": "Zsigmond Király",
+    "year": 2010,
+    "material": "Kő",
     "dimensions": "45 × 30 × 28 cm",
-    "category": ["Portré", "Kisplasztika"],
-    "coverImage": "/narcissus.jpg",
+    "category": ["Portré", "Kő"],
+    "coverImage": "/works/zsigmond/4.jpg",
     "images": [
-      "/narcissus.jpg",
-      "/narcissus.jpg",
-      "/narcissus.jpg"
+      "/works/zsigmond/1.jpg",
+      "/works/zsigmond/2.jpg",
+      "/works/zsigmond/3.jpg"
+    
     ],
     "description": [
       "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
@@ -36,17 +37,17 @@
     ]
   },
   {
-    "slug": "narcissus3",
-    "title": "Narcissus3",
-    "year": 2023,
+    "slug": "ratkoczynandor",
+    "title": "Ratkóczy Nándor",
+    "year": 2008,
     "material": "Bronz",
     "dimensions": "45 × 30 × 28 cm",
     "category": ["Portré", "Kisplasztika"],
-    "coverImage": "/narcissus.jpg",
+    "coverImage": "/works/ratkoczy/1.jpg",
     "images": [
-      "/narcissus.jpg",
-      "/narcissus.jpg",
-      "/narcissus.jpg"
+      "/works/ratkoczy/1.jpg",
+      "/works/ratkoczy/2.jpg",
+      "/works/ratkoczy/3.jpg"
     ],
     "description": [
       "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
