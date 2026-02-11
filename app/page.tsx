@@ -4,7 +4,7 @@ import HeroDetails from "./components/HeroDetails";
 export default function Home() {
   return (
     <>
-    <main className="relative h-[calc(100vh-81px)] bg-[url('/hero.jpg')] bg-cover bg-top">
+    <main className="relative h-[calc(100vh-81px)] bg-[url('/hero-bg.jpg')] bg-cover bg-top">
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30" />

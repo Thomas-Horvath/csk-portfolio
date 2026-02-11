@@ -53,5 +53,23 @@
       "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
       "A forma letisztultsága és az anyagkezelés finomsága..."
     ]
+  },
+  {
+    "slug": "ratkoczynandor1",
+    "title": "Ratkóczy Nándor",
+    "year": 2008,
+    "material": "Bronz",
+    "dimensions": "45 × 30 × 28 cm",
+    "category": ["Portré", "Kisplasztika"],
+    "coverImage": "/works/ratkoczy/1.jpg",
+    "images": [
+      "/works/ratkoczy/1.jpg",
+      "/works/ratkoczy/2.jpg",
+      "/works/ratkoczy/3.jpg"
+    ],
+    "description": [
+      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
+      "A forma letisztultsága és az anyagkezelés finomsága..."
+    ]
   }
 ]

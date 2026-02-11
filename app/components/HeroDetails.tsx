@@ -71,7 +71,7 @@ function HeroDetails() {
                 {/* About teaser */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     <div className="relative rounded-2xl bg-stone-200 aspect-4/3 overflow-hidden" >
-                        <Image src={'/hero-man.jpg'} alt='man' fill className="object-cover" />
+                        <Image src={'/about/hero-about.jpg'} alt='man' fill className="object-cover" />
                     </div>
                     <div>
                         <h2 className="text-3xl text-stone-800">Rólam</h2>
