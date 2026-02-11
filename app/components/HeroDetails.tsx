@@ -6,21 +6,21 @@ function HeroDetails() {
     const works = [
         {
             title: "Narcissus",
-            image: "/narcissus.jpg",
+            image: "/works/narcissus/narcissus.jpg",
             material: "Bronz",
             year: 2023,
             slug: "narcissus",
         },
         {
             title: "Zsigmond király",
-            image: "/zsigmond.jpg",
+            image: "/works/zsigmond/1.jpg",
             material: "Kő",
             year: 2021,
             slug: "zsigmond-kiraly",
         },
         {
             title: "Portré tanulmány",
-            image: "/portre.jpg",
+            image: "/works/ratkoczy/1.jpg",
             material: "Gipsz",
             year: 2024,
             slug: "portre-tanulmany",

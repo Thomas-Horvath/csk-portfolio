@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Név / leírás */}
           <div>
             <p className={`${imperialScript.className} tracking-wider text-5xl text-stone-800`}>
-              Csorba Kornél
+              Csányi Katalin
             </p>
             <p className="mt-4 text-sm leading-relaxed text-stone-600 max-w-xs">
               Szobrászművész.  

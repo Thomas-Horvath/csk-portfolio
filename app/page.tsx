@@ -15,12 +15,12 @@ export default function Home() {
           <div className="max-w-3xl text-neutral-100 flex flex-col items-center md:items-start">
 
             {/* Név */}
-            <h1 className="text-4xl md:text-7xl leading-tight">
-              Csorba Kornél
+            <h1 className="text-4xl -ml-1 md:text-7xl leading-tight">
+              Csányi Katalin
             </h1>
 
             {/* Alcím */}
-            <p className="mt-8 text-lg tracking-wide text-neutral-200">
+            <p className="mt-8 text-3xl font-semibold tracking-wider text-neutral-200">
               Szobrászművész
             </p>
 
