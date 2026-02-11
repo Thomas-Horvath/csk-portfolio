@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <main className="bg-stone-100">
-      <div className="mx-auto max-w-7xl px-8 py-16 space-y-14">
+      <div className="mx-auto max-w-350 px-8 py-16 space-y-14">
 
         <header className="space-y-3">
           <h1 className="text-4xl text-stone-800">Rólam</h1>

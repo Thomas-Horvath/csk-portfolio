@@ -4,6 +4,7 @@ import "./globals.css";
 import { garamond } from '@/app/ui/fonts';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+// import ScrollToTop from "./components/ScrollToTop";
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        {/* <ScrollToTop /> */}
         <Footer />
       </body>
     </html>

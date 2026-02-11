@@ -3,33 +3,41 @@
     "slug": "narcissus",
     "title": "Narcissus",
     "year": 2022,
-    "material": "Bronz",
+    "material": "Márvány",
     "dimensions": "45 × 30 × 28 cm",
-    "category": ["Portré", "Kisplasztika"],
+    "category": [
+      "Portré",
+      "Kisplasztika"
+    ],
     "coverImage": "/works/narcissus/narcissus.jpg",
     "images": [
-      "/works/narcissus/narcissus.jpg",
-      "/narcissus.jpg",
-      "/narcissus.jpg"
+      "/works/narcissus/1.jpg",
+      "/works/narcissus/2.jpg",
+      "/works/narcissus/3.jpg",
+      "/works/narcissus/4.jpg",
+      "/works/narcissus/5.jpg"
+  
+   
     ],
     "description": [
-      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
-      "A forma letisztultsága és az anyagkezelés finomsága..."
+      "Narkisszosszt a görög mitológia egyik híres alakját ábrázolja. Ideiglenesen áll a jelenlegi helyén, várva a végleges elhelyezést. Csányi Katalin szobrászművész alkotása, a diploma évében kezdődött a szobor története, szinátmenetes fehér görög márványból készült. Letisztult kerek formák, szépség jellemzi az életnagyságú szobrot. A guggoló alak szép arcvonásai majdnem lányosak, vállán átvetett derekáig erő lepellel ábrázolta művész. Eredetileg kútszobornak készült. "
     ]
   },
   {
     "slug": "Zsigmond",
     "title": "Zsigmond Király",
     "year": 2010,
-    "material": "Kő",
+    "material": "Mészkő",
     "dimensions": "45 × 30 × 28 cm",
-    "category": ["Portré", "Kő"],
+    "category": [
+      "Portré",
+      "Mellszobor"
+    ],
     "coverImage": "/works/zsigmond/4.jpg",
     "images": [
       "/works/zsigmond/1.jpg",
       "/works/zsigmond/2.jpg",
       "/works/zsigmond/3.jpg"
-    
     ],
     "description": [
       "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
@@ -42,7 +50,10 @@
     "year": 2008,
     "material": "Bronz",
     "dimensions": "45 × 30 × 28 cm",
-    "category": ["Portré", "Kisplasztika"],
+    "category": [
+      "Portré",
+      "Kisplasztika"
+    ],
     "coverImage": "/works/ratkoczy/1.jpg",
     "images": [
       "/works/ratkoczy/1.jpg",
@@ -50,26 +61,47 @@
       "/works/ratkoczy/3.jpg"
     ],
     "description": [
-      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
-      "A forma letisztultsága és az anyagkezelés finomsága..."
+      "Ratkóczy Nándor (1891–1977) orvos, radiológus, egyetemi tanár; orvosi oklevelet 1914-ben szerzett a Budapesten. Gyakornoki éveit a Korányi-klinika röntgenlaboratóriumában töltötte le, majd 1922-ig a II. sz. Központi Egyetemi Röntgenintézetben tanársegéd volt. 1922-től a III. sz. Belklinika röntgenosztályának vezetője, 1942-től 20 évig-ig tanított a budapesti egyetem röntgentanszékén. Ebből az utolsó 6 évben az Országos Röntgen- és Sugárfizikai Intézet igazgatója is volt.1953-tól a Magyar Radiológus Társaság elnöke, több külföldi társaság tiszteletbeli tagja."
     ]
   },
   {
-    "slug": "ratkoczynandor1",
-    "title": "Ratkóczy Nándor",
-    "year": 2008,
-    "material": "Bronz",
+    "slug": "piata",
+    "title": "Pietá",
+    "year": 2000,
+    "material": "Gránit",
     "dimensions": "45 × 30 × 28 cm",
-    "category": ["Portré", "Kisplasztika"],
-    "coverImage": "/works/ratkoczy/1.jpg",
+    "category": [
+      "Portré",
+      "Kisplasztika"
+    ],
+    "coverImage": "/works/pieta/1.jpg",
     "images": [
-      "/works/ratkoczy/1.jpg",
-      "/works/ratkoczy/2.jpg",
-      "/works/ratkoczy/3.jpg"
+      "/works/pieta/1.jpg",
+      "/works/pieta/2.jpg",
+      "/works/pieta/4.jpg",
+      "/works/pieta/5.jpg"
     ],
     "description": [
-      "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
-      "A forma letisztultsága és az anyagkezelés finomsága..."
+      "A szobor 1997-2000 között nyaranta az Élesden megrendezett alkotótáborban készült, az egykori katolikus iskola kertjében. A művésznő mint egyetemi hallgató vett részt a táborban. Felajánlotta az alkotást a városnak, hogy a művelődési ház előtti téren állítsák fel."
+    ]
+  },
+  {
+    "slug": "issekutz",
+    "title": "Issekutz Béla",
+    "year": 20007,
+    "material": "Bronz",
+    "dimensions": "45 × 30 × 28 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/issekutz/1.jpg",
+    "images": [
+      "/works/issekutz/3.jpg",
+      "/works/issekutz/2.jpg"
+    ],
+    "description": [
+      "Issekutz Béla (1886 - 1979) erdélyi születésű farmakológus, gyógyszervegyész – ezen a téren a hazai kutatások megalapozója –, tudománytörténelemmel is foglalkozott."
     ]
   }
 ]

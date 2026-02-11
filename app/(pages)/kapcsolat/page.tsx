@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function ContactPage() {
   return (
     <main className="bg-stone-100">
-      <div className="mx-auto max-w-7xl px-8 py-16 space-y-10">
+      <div className="mx-auto max-w-350 px-8 py-16 space-y-10">
 
         <header>
           <h1 className="text-4xl text-stone-800">Kapcsolat</h1>

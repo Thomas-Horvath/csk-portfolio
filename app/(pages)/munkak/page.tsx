@@ -6,7 +6,7 @@ export default function WorksPage() {
   const filters = ["Összes", "Köztéri", "Portré", "Kisplasztika", "Bronz", "Kő"];
   return (
     <main className="bg-stone-100">
-      <div className="mx-auto max-w-7xl px-8 py-16 space-y-10">
+      <div className="mx-auto max-w-350 px-8 py-16 space-y-10">
 
         {/* Fejléc */}
         <header>

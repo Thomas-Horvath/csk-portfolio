@@ -5,7 +5,7 @@ import { imperialScript } from '../ui/fonts';
 const Footer = () => {
   return (
     <footer className="bg-stone-100 border-t border-stone-300 ">
-      <div className="mx-auto max-w-7xl px-8 py-16">
+      <div className="mx-auto max-w-350 px-8 py-16">
 
         {/* Felső rész */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -76,11 +76,11 @@ const Footer = () => {
         {/* Alsó sáv */}
         <div className="mt-16 pt-6 border-t border-stone-300 flex flex-col md:flex-row items-center justify-between text-xs text-stone-500 gap-4">
           <p>
-            © {new Date().getFullYear()} Csenye Katalin — Minden jog fenntartva.
+            © {new Date().getFullYear()} Csányi Katalin — Minden jog fenntartva.
           </p>
-          <p>
-            Portfolio website
-          </p>
+          <Link href={'https://www.thomashorvath.hu'} target="_blank">
+           Weboldal: ThomasHorvath.hu
+          </Link>
         </div>
 
       </div>

@@ -1,36 +1,36 @@
 import Image from 'next/image'
-
+import works from "@/app/data/work.json";
 
 function HeroDetails() {
 
-    const works = [
-        {
-            title: "Narcissus",
-            image: "/works/narcissus/narcissus.jpg",
-            material: "Bronz",
-            year: 2023,
-            slug: "narcissus",
-        },
-        {
-            title: "Zsigmond király",
-            image: "/works/zsigmond/1.jpg",
-            material: "Kő",
-            year: 2021,
-            slug: "zsigmond-kiraly",
-        },
-        {
-            title: "Portré tanulmány",
-            image: "/works/ratkoczy/1.jpg",
-            material: "Gipsz",
-            year: 2024,
-            slug: "portre-tanulmany",
-        },
-    ];
+    // const works = [
+    //     {
+    //         title: "Narcissus",
+    //         image: "/works/narcissus/narcissus.jpg",
+    //         material: "Bronz",
+    //         year: 2023,
+    //         slug: "narcissus",
+    //     },
+    //     {
+    //         title: "Zsigmond király",
+    //         image: "/works/zsigmond/1.jpg",
+    //         material: "Kő",
+    //         year: 2021,
+    //         slug: "zsigmond-kiraly",
+    //     },
+    //     {
+    //         title: "Portré tanulmány",
+    //         image: "/works/ratkoczy/1.jpg",
+    //         material: "Gipsz",
+    //         year: 2024,
+    //         slug: "portre-tanulmany",
+    //     },
+    // ];
 
 
     return (
         <section className="bg-stone-100">
-            <div className="mx-auto max-w-7xl px-8 py-20 space-y-20">
+            <div className="mx-auto max-w-350 px-8 py-20 space-y-20">
 
                 {/* Featured works */}
                 <div>
@@ -50,14 +50,14 @@ function HeroDetails() {
                     </div>
 
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {works.map((work) => (
+                        {works.slice(0,3).map((work) => (
                             <a
                                 key={work.slug}
                                 href="/munkak"
                                 className="group rounded-2xl bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition"
                             >
                                 <div className="relative aspect-3/4 bg-stone-200" >
-                                    <Image src={work.image} alt='szobor' fill className="object-cover object-top" />
+                                    <Image src={work.coverImage} alt='szobor' fill className="object-cover object-top" />
                                 </div>
                                 <div className="p-5">
                                     <p className="text-stone-800 group-hover:text-stone-900 transition">{work.title}</p>
