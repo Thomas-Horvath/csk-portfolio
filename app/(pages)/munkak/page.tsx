@@ -36,11 +36,11 @@ export default function WorksPage() {
             <Link
               key={work.slug}
               href={`/munkak/${work.slug}`}
-              className="group rounded-2xl bg-white border border-stone-200 overflow-hidden
+              className="group  bg-white border border-stone-200 overflow-hidden
                          shadow-sm hover:shadow-md transition"
             >
               {/* Kép */}
-              <div className="relative aspect-4/3 md:aspect-3/4 bg-stone-200">
+              <div className="relative aspect-4/4  bg-stone-200">
                 <Image
                   src={work.coverImage}
                   alt={work.title}

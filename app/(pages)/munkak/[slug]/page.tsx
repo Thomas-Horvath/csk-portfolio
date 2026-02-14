@@ -20,7 +20,7 @@ export default async function WorkDetailPage({ params }: Props) {
       <div className="mx-auto max-w-6xl px-8 py-16 space-y-16">
 
         {/* Fő kép */}
-        <section className="relative aspect-3/4 max-h-200 mx-auto rounded-2xl overflow-hidden bg-stone-200">
+        <section className="relative aspect-3/4 max-h-200 mx-auto  overflow-hidden bg-stone-200">
           <Image
             src={work.coverImage}
             alt={work.title}
@@ -66,7 +66,7 @@ export default async function WorkDetailPage({ params }: Props) {
             {work.images.map((src, i) => (
               <div
                 key={i}
-                className="relative aspect-3/4 rounded-xl overflow-hidden bg-stone-200"
+                className="relative aspect-4/4 cursor-pointer overflow-hidden bg-stone-200"
               >
                 <Image
                   src={src}

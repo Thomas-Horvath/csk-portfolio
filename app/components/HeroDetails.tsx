@@ -2,32 +2,6 @@ import Image from 'next/image'
 import works from "@/app/data/work.json";
 
 function HeroDetails() {
-
-    // const works = [
-    //     {
-    //         title: "Narcissus",
-    //         image: "/works/narcissus/narcissus.jpg",
-    //         material: "Bronz",
-    //         year: 2023,
-    //         slug: "narcissus",
-    //     },
-    //     {
-    //         title: "Zsigmond király",
-    //         image: "/works/zsigmond/1.jpg",
-    //         material: "Kő",
-    //         year: 2021,
-    //         slug: "zsigmond-kiraly",
-    //     },
-    //     {
-    //         title: "Portré tanulmány",
-    //         image: "/works/ratkoczy/1.jpg",
-    //         material: "Gipsz",
-    //         year: 2024,
-    //         slug: "portre-tanulmany",
-    //     },
-    // ];
-
-
     return (
         <section className="bg-stone-100">
             <div className="mx-auto max-w-350 px-8 py-20 space-y-20">
@@ -54,9 +28,9 @@ function HeroDetails() {
                             <a
                                 key={work.slug}
                                 href="/munkak"
-                                className="group rounded-2xl bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition"
+                                className="group bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition"
                             >
-                                <div className="relative aspect-3/4 bg-stone-200" >
+                                <div className="relative aspect-4/4 bg-stone-200" >
                                     <Image src={work.coverImage} alt='szobor' fill className="object-cover object-top" />
                                 </div>
                                 <div className="p-5">
@@ -70,8 +44,8 @@ function HeroDetails() {
 
                 {/* About teaser */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    <div className="relative rounded-2xl bg-stone-200 aspect-4/3 overflow-hidden" >
-                        <Image src={'/about/hero-about.jpg'} alt='man' fill className="object-cover" />
+                    <div className="relative  bg-stone-200 aspect-4/4 overflow-hidden " >
+                        <Image src={'/about/Kép1.jpg'} alt='man' fill className="object-cover object-top" />
                     </div>
                     <div>
                         <h2 className="text-3xl text-stone-800">Rólam</h2>
