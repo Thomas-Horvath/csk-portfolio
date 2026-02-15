@@ -1,0 +1,133 @@
+{
+    "groupExhibitions": [
+        {
+            "year": 1994,
+            "city": "Hódmezővásárhely",
+            "venue": "Tornyai Múzeum"
+        },
+        {
+            "year": 1995,
+            "city": "Szeged",
+            "venue": "Hungaléria"
+        },
+        {
+            "year": 1996,
+            "city": "Budapest",
+            "venue": "Bercsényi Galéria"
+        },
+        {
+            "year": 1996,
+            "city": "Szeged",
+            "venue": "Bálint Sándor Művelődési Ház"
+        },
+        {
+            "year": 1998,
+            "city": "Budapest",
+            "venue": "Román Kultúra Háza"
+        },
+        {
+            "year": 1999,
+            "city": "Szeged",
+            "venue": "Móra Ferenc Múzeum Képtára"
+        },
+        {
+            "year": 2001,
+            "city": "Alesd",
+            "venue": "Bar Central"
+        },
+        {
+            "year": 2005,
+            "city": "Kecskemét",
+            "venue": "Keresztény Biennálé"
+        },
+        {
+            "year": 2007,
+            "city": "Kecskemét",
+            "venue": "Erdei Ferenc Művelődési Központ",
+            "title": "Kecskeméti Tavaszi Fesztivál – Kodály szellemében"
+        }
+    ],
+    "soloExhibitions": [
+        {
+            "year": 2001,
+            "city": "Budapest",
+            "venue": "Epreskert",
+            "title": "Unio Oppositorum"
+        },
+        {
+            "year": 2008,
+            "city": "Budapest",
+            "venue": "Central European University",
+            "title": "Tone Paths"
+        }
+    ],
+    "awards": [
+        {
+            "year": 1998,
+            "title": "Szépművészeti Múzeum Centenáriumi érempályázat",
+            "result": "I. helyezés"
+        },
+        {
+            "year": 2001,
+            "title": "Diploma-díj"
+        },
+        {
+            "year": 2005,
+            "title": "József Attila emlékérem pályázat",
+            "result": "I. helyezés"
+        }
+    ],
+    "publicWorks": [
+        {
+            "year": 2000,
+            "city": "Alesd",
+            "title": "Piéta"
+        },
+        {
+            "year": 2005,
+            "city": "Sümeg",
+            "title": "Kajári Gyula portré dombormű"
+        },
+        {
+            "year": 2006,
+            "city": "Budapest",
+            "venue": "Semmelweis Egyetem",
+            "title": "Szentágothai János portré dombormű"
+        },
+        {
+            "year": 2007,
+            "city": "Budapest",
+            "venue": "Semmelweis Egyetem",
+            "title": "Issekutz Béla portré dombormű"
+        },
+        {
+            "year": 2008,
+            "city": "Budapest",
+            "venue": "II-es Belklinika",
+            "title": "Kéthly Károly portré dombormű"
+        },
+        {
+            "year": 2008,
+            "city": "Budapest",
+            "venue": "Semmelweis Egyetem",
+            "title": "Ratkóczy Nándor portré dombormű"
+        },
+        {
+            "year": 2009,
+            "city": "Budapest",
+            "venue": "II-es Belklinika",
+            "title": "Gömöri Pál portré dombormű"
+        },
+        {
+            "year": 2009,
+            "city": "Budapest",
+            "venue": "II-es Belklinika",
+            "title": "Tulassay Zsolt portré dombormű"
+        },
+        {
+            "year": 2010,
+            "city": "Óbuda",
+            "title": "Zsigmond király büszt"
+        }
+    ]
+}

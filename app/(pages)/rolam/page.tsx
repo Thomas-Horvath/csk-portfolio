@@ -1,4 +1,5 @@
 import Image from "next/image";
+import exh from '@/app/data/exhibitions.json';
 
 export default function AboutPage() {
   return (
@@ -24,7 +25,7 @@ export default function AboutPage() {
             <p>Leginkább Ligeti György zongoraetűdjei ragadtak magukkal, melyek a legplasztikusabb zenék, amit valaha hallottam. Izgalmas volt analizálni, hogyan ér el Ligeti hangzó anyaggal egy vizuális képet, például a mindannyiunk számára ismert „forgó kerék effektust”. </p>
 
 
-            <p className="mt-12 text-xl"><strong >Csányi Katalin </strong>- szobrászművész</p>
+            <p className="mt-12 text-xl"><strong >Csányi Katalin </strong> - szobrászművész</p>
             {/* <a className="inline-block mt-4 border border-stone-300 px-6 py-3 text-sm uppercase tracking-widest
                           text-stone-700 hover:bg-stone-900 hover:text-white hover:border-stone-900 transition"
               href="/rolam">
@@ -34,19 +35,53 @@ export default function AboutPage() {
         </section>
 
         <section className="rounded-sm bg-white border border-stone-200 p-8">
-          <h2 className="text-2xl text-stone-800">Kiállítások / díjak</h2>
-          <ul className="mt-6 space-y-4">
-            {[
-              { year: "2024", text: "Csoportos kiállítás – Budapest" },
-              { year: "2022", text: "Egyéni tárlat – (helyszín)" },
-              { year: "2020", text: "Alkotói ösztöndíj – (rövid)" },
-            ].map((i) => (
-              <li key={i.year} className="flex gap-6">
-                <span className="w-16 text-stone-500">{i.year}</span>
-                <span className="text-stone-700">{i.text}</span>
-              </li>
-            ))}
-          </ul>
+          <div>
+            <h2 className="text-2xl text-stone-800">Csoportos kiállítások:</h2>
+            <ul className="mt-6 space-y-4">
+              {exh.groupExhibitions.map((i, index) => (
+                <li key={index} className="flex gap-6">
+                  <span className="w-16 text-stone-500">{i.year}</span>
+                  <span className="text-stone-700">{i.venue} - {i.city}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-6">
+            <h2 className="text-2xl text-stone-800">Egyéni kiállítások:</h2>
+            <ul className="mt-6 space-y-4">
+              {exh.soloExhibitions.map((i , index) => (
+                <li key={index} className="flex gap-6">
+                  <span className="w-16 text-stone-500">{i.year}</span>
+                  <span className="text-stone-700">{i.venue} - {i.city} , {i.title}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-2xl text-stone-800">Díjak:</h2>
+            <ul className="mt-6 space-y-4">
+              {exh.awards.map((i , index) => (
+                <li key={index} className="flex gap-6">
+                  <span className="w-16 text-stone-500">{i.year}</span>
+                  <span className="text-stone-700">{i.title} {i.result ?  " - " + i.result : ""} </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
+          <div className="mt-6">
+            <h2 className="text-2xl text-stone-800">Köztéri munkák:</h2>
+            <ul className="mt-6 space-y-4">
+              {exh.publicWorks.map((p, i ) => (
+                <li key={i} className="flex gap-6">
+                  <span className="w-16 text-stone-500">{p.year}</span>
+                  <span className="text-stone-700">{p.title} - {p.city}  {p.venue ?  " - " + p.venue : ""} </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
 
       </div>
