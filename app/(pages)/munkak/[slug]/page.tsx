@@ -20,7 +20,7 @@ export default async function WorkDetailPage({ params }: Props) {
       <div className="mx-auto max-w-6xl px-8 py-16 space-y-16">
 
         {/* Fő kép */}
-        <section className="relative aspect-3/4 max-h-200 mx-auto  overflow-hidden bg-stone-200">
+        {/* <section className="relative aspect-3/4 max-h-200 mx-auto  overflow-hidden bg-stone-200">
           <Image
             src={work.coverImage}
             alt={work.title}
@@ -28,7 +28,7 @@ export default async function WorkDetailPage({ params }: Props) {
             className="object-cover object-top"
             priority
           />
-        </section>
+        </section> */}
 
         {/* Cím + meta */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-10">
