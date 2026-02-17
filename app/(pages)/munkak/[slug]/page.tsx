@@ -1,15 +1,18 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import works from "@/app/data/work.json";
 import { notFound } from "next/navigation";
+import WorkGalleryClient from "../WorkGalleryClient";
 
 type Props = {
   params: { slug: string };
 };
 
 export default async function WorkDetailPage({ params }: Props) {
-    const { slug } = await params;
+  const { slug } = await params;
   const work = works.find((w) => w.slug === slug);
+
 
 
 
@@ -44,7 +47,7 @@ export default async function WorkDetailPage({ params }: Props) {
           </div>
 
           {/* Meta doboz */}
-          <aside className="rounded-2xl bg-white border border-stone-200 p-6 space-y-3 text-sm text-stone-700">
+          <aside className="rounded-sm bg-white border border-stone-200 p-6 space-y-3 text-sm text-stone-700">
             <div>
               <span className="text-stone-500">Műfaj</span>
               <p>{work.category.join(", ")}</p>
@@ -53,31 +56,31 @@ export default async function WorkDetailPage({ params }: Props) {
         </section>
 
         {/* Leírás */}
-        <section className="max-w-3xl space-y-4 text-stone-700 leading-relaxed">
+        <section className=" space-y-4 text-stone-700 leading-relaxed">
           {work.description.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
         </section>
 
-        {/* Galéria */}
-        <section>
-          <h2 className="text-2xl text-stone-800 mb-6">Részletek</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {work.images.map((src, i) => (
-              <div
-                key={i}
-                className="relative aspect-4/4 cursor-pointer overflow-hidden bg-stone-200"
-              >
-                <Image
-                  src={src}
-                  alt={`${work.title} – részlet ${i + 1}`}
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
-            ))}
-          </div>
-        </section>
+
+
+        {/* KLIENS GALÉRIA + MODAL */}
+        <WorkGalleryClient
+          title={work.title}
+          coverImage={work.coverImage}
+          images={[...work.images]}
+        />
+
+
+
+
+
+
+
+
+
+
+
 
         {/* Vissza */}
         <section className="pt-10 border-t border-stone-300">
@@ -90,8 +93,8 @@ export default async function WorkDetailPage({ params }: Props) {
           </Link>
         </section>
 
-      </div>
-    </main>
+      </div >
+    </main >
   );
 }
 

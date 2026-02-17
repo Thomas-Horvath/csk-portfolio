@@ -21,7 +21,7 @@ export default function WorksPage() {
           {filters.map((f) => (
             <button
               key={f}
-              className="px-4 py-2 rounded-full border border-stone-300 bg-white text-sm text-stone-700
+              className="px-4 py-2  border border-stone-300 bg-white text-sm text-stone-700
                          hover:border-stone-400 hover:text-stone-900 transition cursor-pointer"
             >
               {f}
@@ -31,7 +31,7 @@ export default function WorksPage() {
 
 
         {/* Grid */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {works.map((work) => (
             <Link
               key={work.slug}

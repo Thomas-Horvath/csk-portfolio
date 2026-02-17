@@ -11,13 +11,12 @@
     ],
     "coverImage": "/works/narcissus/narcissus.jpg",
     "images": [
+      "/works/narcissus/narcissus.jpg",
       "/works/narcissus/1.jpg",
       "/works/narcissus/2.jpg",
       "/works/narcissus/3.jpg",
       "/works/narcissus/4.jpg",
       "/works/narcissus/5.jpg"
-  
-   
     ],
     "description": [
       "Narkisszosszt a görög mitológia egyik híres alakját ábrázolja. Ideiglenesen áll a jelenlegi helyén, várva a végleges elhelyezést. Csányi Katalin szobrászművész alkotása, a diploma évében kezdődött a szobor története, szinátmenetes fehér görög márványból készült. Letisztult kerek formák, szépség jellemzi az életnagyságú szobrot. A guggoló alak szép arcvonásai majdnem lányosak, vállán átvetett derekáig erő lepellel ábrázolta művész. Eredetileg kútszobornak készült. "
@@ -37,7 +36,8 @@
     "images": [
       "/works/zsigmond/1.jpg",
       "/works/zsigmond/2.jpg",
-      "/works/zsigmond/3.jpg"
+      "/works/zsigmond/3.jpg",
+      "/works/zsigmond/4.jpg"
     ],
     "description": [
       "A „Narcissus” a klasszikus portrészobrászat hagyományaira épít...",
@@ -88,7 +88,7 @@
   {
     "slug": "issekutz",
     "title": "Issekutz Béla",
-    "year": 20007,
+    "year": 2007,
     "material": "Bronz",
     "dimensions": "45 × 30 × 28 cm",
     "category": [
@@ -97,11 +97,50 @@
     ],
     "coverImage": "/works/issekutz/1.jpg",
     "images": [
+      "/works/issekutz/1.jpg",
       "/works/issekutz/3.jpg",
       "/works/issekutz/2.jpg"
     ],
     "description": [
       "Issekutz Béla (1886 - 1979) erdélyi születésű farmakológus, gyógyszervegyész – ezen a téren a hazai kutatások megalapozója –, tudománytörténelemmel is foglalkozott."
+    ]
+  },
+  {
+    "slug": "organikus-forma-i",
+    "title": "Organikus forma I.",
+    "year": 1999,
+    "material": "Drót, papír",
+    "dimensions": "20 × 18 × 13 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/organikus-1.jpg",
+    "images": [
+      "/works/other/organikus-1.jpg",
+      "/works/other/organikus-2.jpg"
+    ],
+    "description": [
+      ""
+    ]
+ },
+  {
+    "slug": "organikus-forma-2",
+    "title": "Organikus forma II.",
+    "year": 1999,
+    "material": "Bronz",
+    "dimensions": "20 × 37 × 27 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/organikus2-1.jpg",
+    "images": [
+      "/works/other/organikus2-1.jpg",
+      "/works/other/organikus2-2.jpg"
+    ],
+    "description": [
+      ""
     ]
   }
 ]

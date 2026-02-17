@@ -14,23 +14,23 @@ export default function ContactPage() {
 
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Form */}
-          <div className="rounded-2xl bg-white border border-stone-200 p-8">
+          <div className="rounded-sm bg-white border border-stone-200 p-8">
             <form className="space-y-5">
               <div>
                 <label className="text-sm text-stone-700">Név</label>
-                <input className="mt-2 w-full rounded-xl border border-stone-300 bg-stone-50 px-4 py-3 outline-none
+                <input className="mt-2 w-full  border border-stone-300 bg-stone-50 px-4 py-3 outline-none
                                   focus:border-stone-500"
                        placeholder="Teljes név" />
               </div>
               <div>
                 <label className="text-sm text-stone-700">E-mail</label>
-                <input className="mt-2 w-full rounded-xl border border-stone-300 bg-stone-50 px-4 py-3 outline-none
+                <input className="mt-2 w-full  border border-stone-300 bg-stone-50 px-4 py-3 outline-none
                                   focus:border-stone-500"
                        placeholder="email@pelda.hu" />
               </div>
               <div>
                 <label className="text-sm text-stone-700">Üzenet</label>
-                <textarea className="mt-2 w-full min-h-36 rounded-xl border border-stone-300 bg-stone-50 px-4 py-3 outline-none
+                <textarea className="mt-2 w-full min-h-36  border border-stone-300 bg-stone-50 px-4 py-3 outline-none
                                      focus:border-stone-500"
                           placeholder="Írd le röviden…" />
               </div>
@@ -38,7 +38,7 @@ export default function ContactPage() {
               <button
                 type="button"
                 className="border border-stone-300 px-6 py-3 text-sm uppercase tracking-widest text-stone-700
-                           hover:bg-stone-900 hover:text-white hover:border-stone-900 transition"
+                           hover:bg-stone-900 hover:text-white hover:border-stone-900 transition cursor-pointer"
               >
                 Küldés
               </button>
@@ -47,7 +47,7 @@ export default function ContactPage() {
 
           {/* Info */}
           <div className="space-y-6">
-            <div className="rounded-2xl bg-white border border-stone-200 p-8">
+            <div className="rounded-sm bg-white border border-stone-200 p-8">
               <h2 className="text-2xl text-stone-800">Elérhetőségek</h2>
               <div className="mt-4 space-y-2 text-stone-700">
                 <p>E-mail: <span className="text-stone-900">info@example.com</span></p>
@@ -55,9 +55,9 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-white border border-stone-200 p-8">
+            <div className="rounded-sm bg-white border border-stone-200 p-8">
               <h2 className="text-2xl text-stone-800">Helyszín</h2>
-              <div className="relative overflow-hidden mt-4 rounded-xl bg-stone-200 aspect-video" >
+              <div className="relative overflow-hidden mt-4 bg-stone-200 aspect-video" >
                 <Image src={'/map.png'} alt="map" fill className="object-cover"/>
               </div>
             </div>

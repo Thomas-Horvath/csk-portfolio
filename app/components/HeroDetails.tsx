@@ -70,7 +70,7 @@ function HeroDetails() {
                         {["Portré", "Kisplasztika", "Köztéri", "Bronz", "Kő"].map((c) => (
                             <span
                                 key={c}
-                                className="px-4 py-2 rounded-full border border-stone-300 bg-white text-sm text-stone-700"
+                                className="px-4 py-2  border border-stone-300 bg-white text-sm text-stone-700"
                             >
                                 {c}
                             </span>
@@ -79,7 +79,7 @@ function HeroDetails() {
                 </div>
 
                 {/* CTA */}
-                <div className="rounded-2xl bg-white border border-stone-200 p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div className="rounded-sm bg-white border border-stone-200 p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                     <div>
                         <h3 className="text-2xl text-stone-800">Megkeresés / együttműködés</h3>
                         <p className="mt-2 text-stone-600">
