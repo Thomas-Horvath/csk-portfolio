@@ -142,5 +142,24 @@
     "description": [
       ""
     ]
+  },
+  {
+    "slug": "csapongo-forma",
+    "title": "Csapongó forma",
+    "year": 1998,
+    "material": "Hegesztett vas, papír",
+    "dimensions": "75 × 160 × 100 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/csapongo_forma.jpg",
+    "images": [
+      "/works/other/csapongo_forma.jpg"
+      
+    ],
+    "description": [
+      ""
+    ]
   }
 ]

@@ -266,6 +266,7 @@ export default function WorkGalleryClient({ title, images, coverImage }: Props) 
           - a belső dobozon stopPropagation, hogy a belső kattintás ne zárjon
          --------------------------- */}
             {open && (
+                
                 <div
                     className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/90"
                     onMouseDown={close}
