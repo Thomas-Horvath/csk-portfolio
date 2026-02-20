@@ -1,140 +1,3 @@
-// "use client";
-
-// import Image from "next/image";
-// import { useEffect, useState } from "react";
-
-// type Props = {
-//     title: string;
-//     images: string[];
-// };
-
-// export default function WorkGalleryClient({ title, images }: Props) {
-//     const [open, setOpen] = useState(false);
-//     const [activeIndex, setActiveIndex] = useState(0);
-
-//     const openAt = (index: number) => {
-//         setActiveIndex(index);
-//         setOpen(true);
-//     };
-
-
-
-//     const close = () => setOpen(false);
-
-//     // ESC-re zárás (profi UX)
-//     useEffect(() => {
-//         if (!open) return;
-
-//         const onKeyDown = (e: KeyboardEvent) => {
-//             if (e.key === "Escape") close();
-//             if (e.key === "ArrowRight") setActiveIndex((i) => (i + 1) % images.length);
-//             if (e.key === "ArrowLeft") setActiveIndex((i) => (i - 1 + images.length) % images.length);
-//         };
-
-//         window.addEventListener("keydown", onKeyDown);
-//         return () => window.removeEventListener("keydown", onKeyDown);
-//     }, [open, images.length]);
-
-//     // Modal nyitáskor ne lehessen alatta scrollozni (szintén profi)
-//     useEffect(() => {
-//         if (!open) return;
-//         const prev = document.body.style.overflow;
-//         document.body.style.overflow = "hidden";
-//         return () => {
-//             document.body.style.overflow = prev;
-//         };
-//     }, [open]);
-
-//     return (
-//         <section>
-//             <h2 className="mb-6 text-2xl text-stone-800">Képek</h2>
-
-//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-//                 {images.map((src, i) => (
-//                     <button
-//                         key={src + i}
-//                         type="button"
-//                         onClick={() => openAt(i)}
-//                         className="relative aspect-square overflow-hidden bg-stone-200 focus:outline-none group cursor-pointer"
-//                         aria-label={`Kép megnyitása: ${title} – ${i + 1}`}
-//                     >
-//                         <Image
-//                             src={src}
-//                             alt={`${title} – kép ${i + 1}`}
-//                             fill
-//                             className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-//                             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-//                         />
-//                     </button>
-//                 ))}
-//             </div>
-
-//             {/* MODAL */}
-//             {open && (
-//                 <div
-//                     className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/90"
-//                     onMouseDown={close} // katt a háttérre zár
-//                     role="dialog"
-//                     aria-modal="true"
-//                 >
-//                     <div
-//                         className="relative w-full max-w-350 h-[80vh]"
-//                         onMouseDown={(e) => e.stopPropagation()} // ne zárjon, ha a képre kattintasz
-//                     >
-//                         <button
-//                             onClick={close}
-//                             className="absolute text-4xl right-0 text-white/90 hover:text-white transition -top-12 cursor-pointer"
-//                             aria-label="Bezárás"
-//                             type="button"
-//                         >
-//                             ✕
-//                         </button>
-
-//                         <Image
-//                             src={images[activeIndex]}
-//                             alt={`${title} – nagy nézet`}
-//                             fill
-//                             className="object-contain"
-//                             priority
-//                         />
-
-//                         {/* Navigáció (bal/jobb) */}
-//                         <button
-//                             type="button"
-//                             onClick={() => setActiveIndex((i) => (i - 1 + images.length) % images.length)}
-//                             className="absolute left-0 top-1/2
-//                                        pb-4 pt-2 px-6 rounded-full
-//                                        text-4xl
-//                                        bg-white/80 hover:text-black text-black/80
-//                                        cursor-pointer transition
-//                                        -translate-y-1/2"
-//                             aria-label="Előző kép"
-//                         >
-//                             ‹
-//                         </button>
-//                         <button
-//                             type="button"
-//                             onClick={() => setActiveIndex((i) => (i + 1) % images.length)}
-//                             className="absolute right-0 top-1/2
-//                                          pb-4 pt-2 px-6 rounded-full
-//                                        text-4xl
-//                                        bg-white/80 hover:text-black text-black/80
-//                                        cursor-pointer
-//                                        transition
-//                                        -translate-y-1/2"
-//                             aria-label="Következő kép"
-//                         >
-//                             ›
-//                         </button>
-//                     </div>
-//                 </div>
-//             )}
-//         </section>
-//     );
-// }
-
-
-
 "use client";
 // ✅ Ez jelzi a Next.js-nek, hogy ez KLIENS komponens.
 // Miért kell? Mert useState/useEffect csak kliensen fut (böngészőben).
@@ -148,11 +11,13 @@ type Props = {
     coverImage?: string; // Opcionális: a mű fő képe, ha külön szeretnénk kezelni
 };
 
+
 export default function WorkGalleryClient({ title, images, coverImage }: Props) {
     // ✅ open: vezérli, hogy a modal megjelenjen-e
     // false = nincs modal, true = modal látható
     const [open, setOpen] = useState(false);
 
+    
     // ✅ activeIndex: azt tárolja, hogy a képtömb melyik indexű elemét mutassuk a modalban
     // 0 = images[0], 1 = images[1], stb.
     const [activeIndex, setActiveIndex] = useState(0);
@@ -266,7 +131,7 @@ export default function WorkGalleryClient({ title, images, coverImage }: Props) 
           - a belső dobozon stopPropagation, hogy a belső kattintás ne zárjon
          --------------------------- */}
             {open && (
-                
+
                 <div
                     className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/90"
                     onMouseDown={close}
@@ -285,6 +150,7 @@ export default function WorkGalleryClient({ title, images, coverImage }: Props) 
                     // stopPropagation megállítja ezt, így a belső kattintások nem zárnak.
                     >
                         {/* X gomb */}
+
                         <button
                             onMouseDown={(e) => e.stopPropagation()}
                             onClick={close}
@@ -314,45 +180,50 @@ export default function WorkGalleryClient({ title, images, coverImage }: Props) 
                --------------------------- */}
 
                         {/* Előző */}
-                        <button
-                            onMouseDown={(e) => e.stopPropagation()}
-                            type="button"
-                            onClick={() =>
-                                setActiveIndex((i) => (i - 1 + images.length) % images.length)
-                            }
-                            // (i - 1 + len) % len:
-                            // - ha i=0, akkor (0-1+len)=len-1 -> utolsó kép
-                            className="absolute left-0 top-1/2
+
+                        {images.length > 1 &&
+                            <>
+                                <button
+                                    onMouseDown={(e) => e.stopPropagation()}
+                                    type="button"
+                                    onClick={() =>
+                                        setActiveIndex((i) => (i - 1 + images.length) % images.length)
+                                    }
+                                    // (i - 1 + len) % len:
+                                    // - ha i=0, akkor (0-1+len)=len-1 -> utolsó kép
+                                    className="absolute left-0 top-1/2
                          pb-4 pt-2 px-6 rounded-full
                          text-4xl
                          bg-white/80 hover:text-black text-black/80
                          cursor-pointer transition
                          -translate-y-1/2"
-                            aria-label="Előző kép"
-                        >
-                            ‹
-                        </button>
+                                    aria-label="Előző kép"
+                                >
+                                    ‹
+                                </button>
 
-                        {/* Következő */}
-                        <button
-                        onMouseDown={(e) => e.stopPropagation()}
-                            type="button"
-                            onClick={() =>
-                                setActiveIndex((i) => (i + 1) % images.length)
-                            }
-                            // (i + 1) % len:
-                            // - ha a végén vagy (i=len-1), akkor (len) % len = 0 -> vissza az elejére
-                            className="absolute right-0 top-1/2
+
+                                <button
+                                    onMouseDown={(e) => e.stopPropagation()}
+                                    type="button"
+                                    onClick={() =>
+                                        setActiveIndex((i) => (i + 1) % images.length)
+                                    }
+                                    // (i + 1) % len:
+                                    // - ha a végén vagy (i=len-1), akkor (len) % len = 0 -> vissza az elejére
+                                    className="absolute right-0 top-1/2
                          pb-4 pt-2 px-6 rounded-full
                          text-4xl
                          bg-white/80 hover:text-black text-black/80
                          cursor-pointer
                          transition
                          -translate-y-1/2"
-                            aria-label="Következő kép"
-                        >
-                            ›
-                        </button>
+                                    aria-label="Következő kép"
+                                >
+                                    ›
+                                </button>
+                            </>
+                        }
                     </div>
                 </div>
             )}

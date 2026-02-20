@@ -161,5 +161,24 @@
     "description": [
       ""
     ]
+  },
+  {
+    "slug": "tervonal-kompozicio",
+    "title": "Térvonal kompozíció",
+    "year": 2001,
+    "material": "drót, papír",
+    "dimensions": "73 × 46 × 46 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/tervonal.jpg",
+    "images": [
+      "/works/other/tervonal.jpg"
+      
+    ],
+    "description": [
+      ""
+    ]
   }
 ]
