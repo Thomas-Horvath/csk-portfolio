@@ -47,12 +47,14 @@ export default async function WorkDetailPage({ params }: Props) {
           </div>
 
           {/* Meta doboz */}
-          <aside className="rounded-sm bg-white border border-stone-200 p-6 space-y-3 text-sm text-stone-700">
-            <div>
-              <span className="text-stone-500">Műfaj</span>
-              <p>{work.category.join(", ")}</p>
-            </div>
-          </aside>
+          {work.category.length > 0 && (
+            <aside className="rounded-sm bg-white border border-stone-200 p-6 space-y-3 text-sm text-stone-700">
+              <div>
+                <span className="text-stone-500">Műfaj</span>
+                <p>{work.category.join(", ")}</p>
+              </div>
+            </aside>
+          )}
         </section>
 
         {/* Leírás */}

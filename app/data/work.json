@@ -180,5 +180,62 @@
     "description": [
       ""
     ]
+  },
+  {
+    "slug": "kontraforma",
+    "title": "Kontraforma",
+    "year": 200,
+    "material": "drót, papír",
+    "dimensions": "33 × 23 × 24 cm",
+    "category": [
+    ],
+    "coverImage": "/works/other/kontraforma.jpg",
+    "images": [
+      "/works/other/kontraforma.jpg",
+      "/works/other/kontraforma2.jpg"
+      
+    ],
+    "description": [
+      ""
+    ]
+  },
+  {
+    "slug": "terretegyodes",
+    "title": "Térrétegződés",
+    "year": 1999,
+    "material": "heggesztett vas, papír",
+    "dimensions": "77 × 65 × 15 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/terretegzodes.jpg",
+    "images": [
+      "/works/other/terretegzodes.jpg",
+      "/works/other/terretegzodes2.jpg"
+      
+    ],
+    "description": [
+      ""
+    ]
+  },
+  {
+    "slug": "szuletes",
+    "title": "Születés",
+    "year": 2001,
+    "material": "drót, papír",
+    "dimensions": "50 × 36 × 136 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/szuletes.jpg",
+    "images": [
+      "/works/other/szuletes.jpg"
+    ],
+    "description": [
+      ""
+    ]
   }
+ 
 ]
