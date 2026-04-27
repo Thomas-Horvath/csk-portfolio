@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Csányi Katalin portfólió
 
-## Getting Started
+Ez a projekt Csányi Katalin szobrászművész bemutatkozó és portfólió weboldala. A honlap klasszikus, letisztult vizuális nyelven mutatja be a művész munkáit, szakmai hátterét, kiállításait, díjait és köztéri alkotásait.
 
-First, run the development server:
+Az oldal fő üzenete:
+
+> Időtálló formák, csendes történetek. Klasszikus szobrászat kortárs szemlélettel.
+
+## A projekt célja
+
+A weboldal célja, hogy rendezett, vizuálisan erős és könnyen kezelhető formában mutassa be:
+
+- a kiemelt szobrokat és plasztikákat,
+- a teljes munkaportfóliót egyedi műoldalakkal,
+- a művész szakmai bemutatkozását,
+- a kiállításokat, díjakat és köztéri munkákat,
+- az érdeklődők és megrendelők számára a kapcsolatfelvételi lehetőséget.
+
+## Mit tartalmaz a honlap?
+
+### Kezdőlap
+
+A főoldal nagy méretű hero szakasszal indul, ahol megjelenik a név, a szakmai megnevezés és a rövid művészi ars poetica. Ezt követi:
+
+- kiemelt munkák blokk,
+- rövid bemutatkozó szakasz,
+- műfaji címkék,
+- kapcsolatfelvételre ösztönző CTA blokk.
+
+### Munkáim
+
+A `Munkáim` oldal a portfólió tételeit rácsos elrendezésben mutatja be. Minden elem külön adatobjektumból épül fel, és saját részletes oldalra vezet.
+
+A jelenlegi portfólióban többek között ezek a művek szerepelnek:
+
+- `Narcissus`
+- `Zsigmond Király`
+- `Ratkóczy Nándor`
+- `Pietá`
+- `Issekutz Béla`
+- több absztrakt és organikus formai munka
+
+### Egyedi műoldalak
+
+Minden mű saját oldalt kap, ahol megjelenik:
+
+- a cím,
+- az évszám,
+- az anyaghasználat,
+- a méret,
+- a műfaj,
+- a leírás,
+- egy kattintható képgaléria modal nézettel.
+
+### Rólam
+
+A `Rólam` oldal tartalmazza:
+
+- a tanulmányokat,
+- részletes szakmai bemutatkozást,
+- a művészi szemlélet ismertetését,
+- csoportos és egyéni kiállításokat,
+- díjakat,
+- köztéri munkákat.
+
+### Kapcsolat
+
+A kapcsolat oldal jelenleg egy vizuálisan elkészített, de backendhez még nem kötött űrlapot tartalmaz, valamint alap elérhetőségi blokkokat és térképes képet.
+
+## Technológiai háttér
+
+- `Next.js 16` App Routerrel
+- `React 19`
+- `TypeScript`
+- `Tailwind CSS 4`
+- `next/font` Google font betöltéssel
+- `react-icons`
+
+## Projektstruktúra
+
+```text
+app/
+  (pages)/
+    kapcsolat/
+    munkak/
+    rolam/
+  components/
+  data/
+  ui/
+  globals.css
+  layout.tsx
+  page.tsx
+
+public/
+  about/
+  works/
+  hero-bg.jpg
+  map.png
+```
+
+## Fontos tartalmi források
+
+- `app/data/work.json`: a művek adatai, képei, leírásai
+- `app/data/exhibitions.json`: kiállítások, díjak, köztéri munkák
+- `public/works/*`: portfólióképek
+- `public/about/*`: bemutatkozó oldal képei
+
+## Fejlesztői indítás
+
+Telepítés után a fejlesztői szerver indítása:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ezután a projekt elérhető itt:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+További hasznos parancsok:
 
-## Learn More
+```bash
+npm run build
+npm run start
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Jelenlegi állapot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A projekt jól használható statikus portfólióoldalként, de az elemzés alapján jelenleg vannak félkész vagy továbbfejleszthető részek:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- a `Kapcsolat` oldalon még placeholder elérhetőségek szerepelnek (`info@example.com`),
+- az űrlap jelenleg nem küld adatot,
+- a `Munkáim` oldalon a szűrőgombok még nem végeznek tényleges szűrést,
+- az adatok egy része kézzel karbantartott JSON fájlokból érkezik,
+- a lint futtatás jelenleg hibát jelez néhány komponensben.
 
-## Deploy on Vercel
+## Ajánlott következő lépések
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- valódi kapcsolati adatok beírása,
+- az űrlap backendhez vagy e-mail szolgáltatáshoz kötése,
+- működő portfóliószűrés kialakítása,
+- SEO leírások és oldalankénti metadata pontosítása,
+- a lint hibák javítása,
+- opcionálisan adminisztrálható tartalomkezelés bevezetése.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Összegzés
+
+Ez a repository nem egyszerű sablonprojekt, hanem egy konkrét művészeti portfólió webes megjelenése. A struktúra átlátható, a vizuális irány következetes, a tartalom pedig elsősorban Csányi Katalin szobrászművész bemutatását és munkáinak reprezentatív megjelenítését szolgálja.

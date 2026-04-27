@@ -6,15 +6,20 @@ import { notFound } from "next/navigation";
 import WorkGalleryClient from "../WorkGalleryClient";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return works.map((work) => ({
+    slug: work.slug,
+  }));
+}
+
+export const dynamicParams = false;
 
 export default async function WorkDetailPage({ params }: Props) {
   const { slug } = await params;
   const work = works.find((w) => w.slug === slug);
-
-
-
 
   if (!work) return notFound();
 

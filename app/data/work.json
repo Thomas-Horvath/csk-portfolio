@@ -236,6 +236,60 @@
     "description": [
       ""
     ]
+  },
+  {
+    "slug": "ordogletra",
+    "title": "Ligeti analízis - Ördöglétra",
+    "year": 2004,
+    "material": "Hegesztett vas",
+    "dimensions": "155 × 79 × 48 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/ordogletra.jpg",
+    "images": [
+      "/works/other/ordogletra.jpg"
+    ],
+    "description": [
+      ""
+    ]
+  },
+  {
+    "slug": "minden_egesz_eltorott1",
+    "title": "Minden egész eltörött - I.",
+    "year": 1998,
+    "material": "Gipsz, Hungarocell, Papír",
+    "dimensions": "32 × 65 × 41 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/minden_egesz_eltorott1.jpg",
+    "images": [
+      "/works/other/minden_egesz_eltorott1.jpg"
+    ],
+    "description": [
+      ""
+    ]
+  },
+  {
+    "slug": "minden_egesz_eltorott2",
+    "title": "Minden egész eltörött - II.",
+    "year": 1998,
+    "material": "Gipsz, Hungarocell, Papír",
+    "dimensions": "42 × 55 × 33 cm",
+    "category": [
+      "Portré",
+      "Dombormű"
+    ],
+    "coverImage": "/works/other/minden_egesz_eltorott2.jpg",
+    "images": [
+      "/works/other/minden_egesz_eltorott2.jpg"
+    ],
+    "description": [
+      ""
+    ]
   }
  
 ]
