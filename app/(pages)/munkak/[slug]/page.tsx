@@ -1,5 +1,3 @@
-
-import Image from "next/image";
 import Link from "next/link";
 import works from "@/app/data/work.json";
 import { notFound } from "next/navigation";
@@ -74,7 +72,6 @@ export default async function WorkDetailPage({ params }: Props) {
         {/* KLIENS GALÉRIA + MODAL */}
         <WorkGalleryClient
           title={work.title}
-          coverImage={work.coverImage}
           images={[...work.images]}
         />
 

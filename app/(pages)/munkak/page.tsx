@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import LoadingImage from "@/app/components/LoadingImage";
 import works from "@/app/data/work.json";
 
 export default function WorksPage() {
@@ -40,15 +40,14 @@ export default function WorksPage() {
                          shadow-sm hover:shadow-md transition"
             >
               {/* Kép */}
-              <div className="relative aspect-4/4  bg-stone-200">
-                <Image
-                  src={work.coverImage}
-                  alt={work.title}
-                  fill
-                  className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                />
-              </div>
+              <LoadingImage
+                src={work.coverImage}
+                alt={work.title}
+                fill
+                containerClassName="aspect-4/4"
+                className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              />
 
               {/* Szöveg */}
               <div className="p-5">

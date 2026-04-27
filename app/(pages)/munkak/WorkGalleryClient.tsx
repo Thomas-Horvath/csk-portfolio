@@ -2,17 +2,16 @@
 // ✅ Ez jelzi a Next.js-nek, hogy ez KLIENS komponens.
 // Miért kell? Mert useState/useEffect csak kliensen fut (böngészőben).
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
+import LoadingImage from "@/app/components/LoadingImage";
 
 type Props = {
     title: string;   // A mű címe (alt szövegekhez + aria labelhez)
     images: string[]; // A galériában megjelenő képek URL-jei
-    coverImage?: string; // Opcionális: a mű fő képe, ha külön szeretnénk kezelni
 };
 
 
-export default function WorkGalleryClient({ title, images, coverImage }: Props) {
+export default function WorkGalleryClient({ title, images }: Props) {
     // ✅ open: vezérli, hogy a modal megjelenjen-e
     // false = nincs modal, true = modal látható
     const [open, setOpen] = useState(false);
@@ -113,10 +112,11 @@ export default function WorkGalleryClient({ title, images, coverImage }: Props) 
                 object-cover: szépen kivágja
                 object-top: felülről igazítja a vágást
                 hover: finom zoom */}
-                        <Image
+                        <LoadingImage
                             src={src}
                             alt={`${title} – kép ${i + 1}`}
                             fill
+                            containerClassName="size-full"
                             className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
                             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                         />
@@ -163,11 +163,12 @@ export default function WorkGalleryClient({ title, images, coverImage }: Props) 
 
                         {/* ✅ A nagy kép: images[activeIndex] alapján jelenik meg
                 object-contain: teljes kép látszik (nem vágja), arányt tartva */}
-                        <Image
+                        <LoadingImage
                             src={images[activeIndex]}
                             alt={`${title} – nagy nézet`}
                             width={1200}
                             height={1200}
+                            containerClassName="max-w-full max-h-[80vh]"
                             className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
                             priority
                             onMouseDown={(e) => e.stopPropagation()}

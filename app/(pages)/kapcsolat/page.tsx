@@ -1,4 +1,4 @@
-import Image from "next/image";
+import LoadingImage from "@/app/components/LoadingImage";
 
 export default function ContactPage() {
   return (
@@ -57,9 +57,13 @@ export default function ContactPage() {
 
             <div className="rounded-sm bg-white border border-stone-200 p-8">
               <h2 className="text-2xl text-stone-800">Helyszín</h2>
-              <div className="relative overflow-hidden mt-4 bg-stone-200 aspect-video" >
-                <Image src={'/map.png'} alt="map" fill className="object-cover"/>
-              </div>
+              <LoadingImage
+                src="/map.png"
+                alt="map"
+                fill
+                containerClassName="mt-4 aspect-video"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import exh from '@/app/data/exhibitions.json';
+import LoadingImage from "@/app/components/LoadingImage";
 
 export default function AboutPage() {
   return (
@@ -21,9 +21,13 @@ export default function AboutPage() {
         </header>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-          <div className="relative overflow-hidden  bg-stone-200 aspect-square">
-            <Image src={'/about/about1.jpg'} alt="" fill className="object-cover object-top" />
-          </div>
+          <LoadingImage
+            src="/about/about1.jpg"
+            alt=""
+            fill
+            containerClassName="aspect-square"
+            className="object-cover object-top"
+          />
           <div className="space-y-4 text-stone-700 leading-relaxed">
             <p>2001-ben diplomáztam a Magyar Képzőművészeti Egyetem Szobrász szakán, mesterem Farkas Ádám volt.</p>
             <p>A természet, az élet különböző megnyilvánulásai mindig is csodálattal töltöttek el. Érdekel a figura, de sokszor olyan téri problémák foglalkoztatnak, melyek absztrakt megformálást igényelnek. Munkáimban ezért egyszerre van jelen a figuralitás és az absztrakt organikus vonala. Az éremtől a köztéri méretű faragványig mindenféle műfajban tevékenykedem.</p>

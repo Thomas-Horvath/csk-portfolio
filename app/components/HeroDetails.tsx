@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import LoadingImage from "@/app/components/LoadingImage";
 import works from "@/app/data/work.json";
 
 function HeroDetails() {
@@ -30,9 +30,13 @@ function HeroDetails() {
                                 href="/munkak"
                                 className="group bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition"
                             >
-                                <div className="relative aspect-4/4 bg-stone-200" >
-                                    <Image src={work.coverImage} alt='szobor' fill className="object-cover object-top" />
-                                </div>
+                                <LoadingImage
+                                    src={work.coverImage}
+                                    alt="szobor"
+                                    fill
+                                    containerClassName="aspect-4/4"
+                                    className="object-cover object-top"
+                                />
                                 <div className="p-5">
                                     <p className="text-stone-800 group-hover:text-stone-900 transition">{work.title}</p>
                                     <p className="mt-1 text-sm text-stone-600">   {work.material} · {work.year}</p>
@@ -44,9 +48,13 @@ function HeroDetails() {
 
                 {/* About teaser */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    <div className="relative  bg-stone-200 aspect-square overflow-hidden max-w-lg" >
-                        <Image src={'/about/about1.jpg'} alt='man' fill className="object-cover object-top" />
-                    </div>
+                    <LoadingImage
+                        src="/about/about1.jpg"
+                        alt="man"
+                        fill
+                        containerClassName="aspect-square max-w-lg"
+                        className="object-cover object-top"
+                    />
                     <div className="space-y-4 text-stone-700 leading-relaxed">
                         <h2 className="text-3xl text-stone-800">Rólam</h2>
                         <p className="mt-4 text-stone-600 leading-relaxed">
